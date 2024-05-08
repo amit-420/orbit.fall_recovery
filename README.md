@@ -52,7 +52,7 @@ This template depends on Isaac Sim and Orbit. For detailed instructions on how t
 
 Decide on a name for your project or extension. This guide will refer to this name as `<your_extension_name>`.
 
-- Create a new repository based off this template [here](https://github.com/new?owner=isaac-orbit&template_name=orbit.ext_template&template_owner=isaac-orbit). Name your forked repository using the following convention: `"orbit.<your_extension_name>"`.
+- Create a new repository based off this template [here](https://github.com/new?owner=isaac-orbit&template_name=orbit.fall_recovery&template_owner=isaac-orbit). Name your forked repository using the following convention: `"orbit.<your_extension_name>"`.
 
 - Clone your forked repository to a location **outside** the orbit repository.
 
@@ -66,7 +66,7 @@ git clone <your_repository_url>
 
 ```bash
 cd orbit.<your_extension_name>
-mv orbit/ext_template orbit/<your_extension_name>
+mv orbit/fall_recovery orbit/<your_extension_name>
 ```
 
 - Define the following environment variable to specify the path to your Orbit installation:
@@ -122,7 +122,7 @@ To enable your extension, follow these steps:
 1. **Add the search path of your repository** to the extension manager:
     - Navigate to the extension manager using `Window` -> `Extensions`.
     - Click on the **Hamburger Icon** (☰), then go to `Settings`.
-    - In the `Extension Search Paths`, enter the path that goes up to your repository's location without actually including the repository's own directory. For example, if your repository is located at `/home/code/orbit.ext_template`, you should add `/home/code` as the search path.
+    - In the `Extension Search Paths`, enter the path that goes up to your repository's location without actually including the repository's own directory. For example, if your repository is located at `/home/code/orbit.fall_recovery`, you should add `/home/code` as the search path.
     - If not already present, in the `Extension Search Paths`, enter the path that leads to your local Orbit directory. For example: `/home/orbit/source/extensions`
     - Click on the **Hamburger Icon** (☰), then click `Refresh`.
 
@@ -165,7 +165,7 @@ ${ORBIT_PATH}/orbit.sh -p scripts/rsl_rl/play.py --task Template-Velocity-Flat-A
 
 ### Omniverse Extension
 
-We provide an example UI extension that will load upon enabling your extension defined in `orbit/ext_template/ui_extension_example.py`. For more information on UI extensions, enable and check out the source code of the `omni.isaac.ui_template` extension and refer to the introduction on [Isaac Sim Workflows 1.2.3. GUI](https://docs.omniverse.nvidia.com/isaacsim/latest/introductory_tutorials/tutorial_intro_workflows.html#gui).
+We provide an example UI extension that will load upon enabling your extension defined in `orbit/fall_recovery/ui_extension_example.py`. For more information on UI extensions, enable and check out the source code of the `omni.isaac.ui_template` extension and refer to the introduction on [Isaac Sim Workflows 1.2.3. GUI](https://docs.omniverse.nvidia.com/isaacsim/latest/introductory_tutorials/tutorial_intro_workflows.html#gui).
 
 ## Pre-Commit
 
@@ -185,7 +185,7 @@ pre-commit run --all-files
 
 You are all set and no longer need the template instructions
 
-- The `orbit/ext_template` and `scripts/rsl_rl` directories act as a reference template for your convenience. Delete them if no longer required.
+- The `orbit/fall_recovery` and `scripts/rsl_rl` directories act as a reference template for your convenience. Delete them if no longer required.
 
 - When ready, use this `README.md` as a template and customize where appropriate.
 
@@ -206,4 +206,4 @@ source ~/.bashrc
 
 ## Bugs & Feature Requests
 
-Please report bugs and request features using the [Issue Tracker](https://github.com/isaac-orbit/orbit.ext_template/issues).
+Please report bugs and request features using the [Issue Tracker](https://github.com/isaac-orbit/orbit.fall_recovery/issues).
